@@ -1,0 +1,1 @@
+from random-quotes.main import Quote
