@@ -1,20 +1,18 @@
 from distutils.core import setup
 setup(
-  name = 'random-quotes',         
-  packages = ['random-quotes'],   
+  name = 'quoters',         
+  packages = ['quoters'],   
   version = '0.1',      
   license='MIT',        
   description = 'Pythonic random quote generator',   
   author = 'Suman Kumar',                  
   author_email = 'skcool.123bgp@gmail.com',     
-  url = 'https://github.com/suman-kr/random-quotes', 
-  download_url = 'https://github.com/suman-kr/random-quotes/archive/0.1.tar.gz',   
+  url = 'https://github.com/suman-kr/quoters', 
+  download_url = 'https://github.com/suman-kr/quoters/archive/0.1.tar.gz',   
   keywords = ['RANDOM', 'QUOTES', 'SCRAPPER'],   
   install_requires=[            
           'requests',
           'beautifulsoup4',
-          'random',
-          'sys',
       ],
   classifiers=[
     'Development Status :: 3 - Alpha',      

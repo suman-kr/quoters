@@ -1,0 +1,1 @@
+from quoters.main import Quote
