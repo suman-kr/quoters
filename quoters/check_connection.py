@@ -1,5 +1,5 @@
 import socket
-from constants import CONN_URL
+from quoters.constants import CONN_URL
 
 def is_connected():
     try:

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
-import extract_data
+from quoters.extract_data import check_connection_and_generate_quote
 
 class Quote:
-    def random_quote():
-        extract_data.check_connection_and_generate_quote()
+    def __str__(self):
+        return check_connection_and_generate_quote()
 
