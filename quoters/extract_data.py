@@ -17,7 +17,7 @@ def generate_random_quote():
 def check_connection_and_generate_quote():
     try:
         if is_connected():
-            generate_random_quote()  
+            return generate_random_quote()  
         else:
             print("Site not reachable!\nPlease check your connection")
     except:
