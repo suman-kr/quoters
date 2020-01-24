@@ -2,13 +2,13 @@ from distutils.core import setup
 setup(
   name = 'quoters',         
   packages = ['quoters'],   
-  version = '0.2',      
+  version = '0.3',      
   license='MIT',        
   description = 'Pythonic random quote generator',   
   author = 'Suman Kumar',                  
   author_email = 'skcool.123bgp@gmail.com',     
   url = 'https://github.com/suman-kr/quoters', 
-  download_url = 'https://github.com/suman-kr/quoters/archive/0.2.tar.gz',   
+  download_url = 'https://github.com/suman-kr/quoters/archive/0.3.tar.gz',   
   keywords = ['RANDOM', 'QUOTES', 'SCRAPPER'],   
   install_requires=[            
           'requests',
