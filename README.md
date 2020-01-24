@@ -1,4 +1,4 @@
-# random-quotes
+# quoters
 A python web scrapper to generate random quote
 
 > To install
