@@ -20,5 +20,6 @@ def check_connection_and_generate_quote():
             return generate_random_quote()  
         else:
             print("Site not reachable!\nPlease check your connection")
+            return False
     except:
         raise OSError

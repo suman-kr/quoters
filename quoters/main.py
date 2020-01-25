@@ -4,5 +4,8 @@ from quoters.extract_data import check_connection_and_generate_quote
 
 class Quote:
     def print():
-        return check_connection_and_generate_quote()
+        result = check_connection_and_generate_quote()
+        if result != False:
+            return result
+        
 
