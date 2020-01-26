@@ -1,10 +1,16 @@
 from distutils.core import setup
+
+with open('../quoters/quoters/README.md') as f:
+  long_desc = f.read()
+
 setup(
   name = 'quoters',         
   packages = ['quoters'],   
   version = '0.5',      
   license='MIT',        
   description = 'Pythonic random quote generator',   
+  long_description = long_desc,
+  long_description_content_type = 'text/markdown',
   author = 'Suman Kumar',                  
   author_email = 'skcool.123bgp@gmail.com',     
   url = 'https://github.com/suman-kr/quoters', 
