@@ -36,6 +36,7 @@ def random_series_quotes():
     html = urlopen(req).read()
     soup = bs(html, 'html.parser')
     paragraphs = soup.find_all('p')
-    extracted_quotes = [re.sub(r"^\d{1,}\.", "", paragraphs[i].text)
+    quotes = [re.sub(r"^\d{1,}\.", "", paragraphs[i].text)
                         for i in range(5, len(paragraphs) - 1)]
-    return choice(extracted_quotes)
+    print(quotes)
+    return choice(quotes)
