@@ -12,6 +12,12 @@ from quoters import Quote
 print(Quote.print())
 ```
 
+> Available Functions
+```py
+print() # Returns random quotes
+print_series_quote() # Returns random TV shows quotes
+```
+
 ## Resources
 The data consumed are from the following sources:
 - https://www.yourselfquotes.com/thought-of-the-day/
