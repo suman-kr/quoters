@@ -3,23 +3,39 @@ from bs4 import BeautifulSoup as bs
 from urllib.request import Request, urlopen
 from random import choice
 from quoters.check_connection import is_connected
-from quoters.constants import URL
+from quoters.constants import URL, MOVIE_QUOTES_URL
 import sys
-
+import re
+from quoters.enum import QuoteType
 
 def generate_random_quote():
-        req = Request(URL, headers={'User-Agent': 'Mozilla/5.0'})
-        html = urlopen(req).read()
-        soup = bs(html , 'html.parser')
-        a = [i.text.strip().replace("\n", " ") for i in soup.find_all('blockquote')]
-        return choice(a)
+    req = Request(URL, headers={'User-Agent': 'Mozilla/5.0'})
+    html = urlopen(req).read()
+    soup = bs(html, 'html.parser')
+    quotes = [i.text.strip().replace("\n", " ")
+              for i in soup.find_all('blockquote')]
+    return choice(quotes)
 
-def check_connection_and_generate_quote():
+
+def check_connection_and_generate_quote(_type: QuoteType):
     try:
         if is_connected():
-            return generate_random_quote()  
+            if _type == QuoteType.QUOTE:
+                return generate_random_quote()
+            elif _type == QuoteType.SERIES_QUOTE:
+                random_series_quotes()
         else:
             print("Site not reachable!\nPlease check your connection")
             return False
     except:
         raise OSError
+
+
+def random_series_quotes():
+    req = Request(MOVIE_QUOTES_URL, headers={'User-Agent': 'Mozilla/5.0'})
+    html = urlopen(req).read()
+    soup = bs(html, 'html.parser')
+    paragraphs = soup.find_all('p')
+    extracted_quotes = [re.sub(r"^\d{1,}\.", "", paragraphs[i].text)
+                        for i in range(5, len(paragraphs) - 1)]
+    return choice(extracted_quotes)
