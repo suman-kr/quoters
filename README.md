@@ -11,3 +11,10 @@ pip install quoters
 from quoters import Quote
 print(Quote.print())
 ```
+
+## Resources
+The data consumed are from the following sources:
+- https://www.yourselfquotes.com/thought-of-the-day/
+- https://www.tvtime.com/article/top-50-unforgettable-tv-quotes
+
+### Thanks!
