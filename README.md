@@ -1,7 +1,7 @@
 # quoters
 A python web scrapper to generate random quote
 
-> To install
+> Installation
 ```sh
 pip install quoters
 ```
@@ -11,7 +11,7 @@ pip install quoters
 from quoters import Quote
 print(Quote.print())
 ```
-
+## Contents
 > Available Functions
 ```py
 print() # Returns random quotes
