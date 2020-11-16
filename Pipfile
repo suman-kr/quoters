@@ -12,6 +12,7 @@ requests = "*"
 fastapi = "*"
 uvicorn = "*"
 quoters = "*"
+lxml = "**
 
 [requires]
 python_version = "3.8"
