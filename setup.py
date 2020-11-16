@@ -18,7 +18,7 @@ print(Quote.print())
 setup(
     name='quoters',
     packages=['quoters'],
-    version='0.15',
+    version='0.16',
     license='MIT',
     description='Pythonic random quote generator',
     long_description=long_desc,
@@ -26,7 +26,7 @@ setup(
     author='Suman Kumar',
     author_email='skcool.123bgp@gmail.com',
     url='https://github.com/suman-kr/quoters',
-    download_url='https://github.com/suman-kr/quoters/archive/0.15.tar.gz',
+    download_url='https://github.com/suman-kr/quoters/archive/0.16.tar.gz',
     keywords=['RANDOM', 'QUOTES', 'SCRAPPER'],
     install_requires=[
         'requests',
