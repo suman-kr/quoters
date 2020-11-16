@@ -16,6 +16,7 @@ print(Quote.print())
 ```py
 print() # Returns random quotes
 print_series_quote() # Returns random TV shows quotes
+print_anime_quote() # Returns random Anime quotes
 ```
 
 ## Resources
