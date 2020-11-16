@@ -35,7 +35,7 @@ def check_connection_and_generate_quote(_type: QuoteType):
 
 
 def random_series_quote():
-    req = Request(URL, headers={'User-Agent': 'Mozilla/5.0'})
+    req = Request(SERIES_QUOTES_URL, headers={'User-Agent': 'Mozilla/5.0'})
     html = urlopen(req).read()
     soup = bs(html, 'html.parser')
     paragraphs = soup.find_all('p')
@@ -45,7 +45,7 @@ def random_series_quote():
 
 
 def random_anime_quote():
-    req = Request(URL, headers={'User-Agent': 'Mozilla/5.0'})
+    req = Request(ANIME_QUOTES_URL, headers={'User-Agent': 'Mozilla/5.0'})
     html = urlopen(req).read()
     soup = bs(html, 'lxml')
     ul_tag = soup.find_all('ul')[3]
