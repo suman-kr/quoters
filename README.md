@@ -26,7 +26,7 @@ The data consumed are from the following sources:
 ## API
 The package can also be used from API. API is hosted on [Heroku](https://www.heroku.com/)
 ```
-http://py-quoters.herokuapp.com/ [Random quotes]
-http://py-quoters.herokuapp.com/?query=series [Random series quotes]
+http://py-quoters.herokuapp.com/ [Random quote]
+http://py-quoters.herokuapp.com/?query=series [Random TV Shows quote]
 ```
 ### Thanks! :heart:
