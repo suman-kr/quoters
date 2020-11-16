@@ -9,6 +9,9 @@ autopep8="*"
 [packages]
 beautifulsoup4 = "*"
 requests = "*"
+fastapi = "*"
+uvicorn = "*"
+quoters = "*"
 
 [requires]
 python_version = "3.8"
