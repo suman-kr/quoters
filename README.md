@@ -23,11 +23,13 @@ print_anime_quote() # Returns random Anime quotes
 The data consumed are from the following sources:
 - https://www.yourselfquotes.com/thought-of-the-day/
 - https://www.tvtime.com/article/top-50-unforgettable-tv-quotes
+- https://bayart.org/anime-quotes/
 
 ## API
 The package can also be used from API. API is hosted on [Heroku](https://www.heroku.com/)
 ```
 http://py-quoters.herokuapp.com/ [Random quote]
 http://py-quoters.herokuapp.com/?query=series [Random TV Shows quote]
+http://py-quoters.herokuapp.com/?query=anime [Random Anime characters quote]
 ```
 ### Thanks! :heart:
