@@ -1,24 +1,23 @@
 from distutils.core import setup
 
-long_desc = """# quoters
-A python library that gives you beautiful quotes.
+long_desc = """quoters
+``A python library that gives you beautiful quotes.``
 
-### To install
-```sh
+# To install
+``
 pip install quoters
-```
+``
 
-### Running and usage
-```sh
-from quoters import Quote
-print(Quote.print())
-```
+# Documentation
+``
+https://github.com/suman-kr/quoters
+``
 """
 
 setup(
     name='quoters',
     packages=['quoters'],
-    version='0.18',
+    version='0.19',
     license='MIT',
     description='Pythonic random quote generator',
     long_description=long_desc,
@@ -26,12 +25,13 @@ setup(
     author='Suman Kumar',
     author_email='skcool.123bgp@gmail.com',
     url='https://github.com/suman-kr/quoters',
-    download_url='https://github.com/suman-kr/quoters/archive/0.18.tar.gz',
+    download_url='https://github.com/suman-kr/quoters/archive/0.19.tar.gz',
     keywords=['RANDOM', 'QUOTES', 'SCRAPPER'],
     install_requires=[
         'requests',
         'beautifulsoup4',
-        'lxml'
+        'lxml',
+        'html5lib'
     ],
     classifiers=[
         'Development Status :: 3 - Alpha',

@@ -47,7 +47,7 @@ def random_series_quote():
 def random_anime_quote():
     req = Request(ANIME_QUOTES_URL, headers={'User-Agent': 'Mozilla/5.0'})
     html = urlopen(req).read()
-    soup = bs(html, 'lxml')
+    soup = bs(html, 'html5lib')
     ul_tag = soup.find_all('ul')[3]
     quotes = []
     for tag in ul_tag.find_all('li'):
