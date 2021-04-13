@@ -21,7 +21,7 @@ setup(
     author='Suman Kumar',
     author_email='skcool.123bgp@gmail.com',
     url='https://github.com/suman-kr/quoters',
-    download_url='https://github.com/suman-kr/quoters/archive/0.19.tar.gz',
+    download_url='https://github.com/suman-kr/quoters/archive/0.20.tar.gz',
     keywords=['RANDOM', 'QUOTES', 'SCRAPPER'],
     install_requires=[
         'requests',
