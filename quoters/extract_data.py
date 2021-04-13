@@ -51,7 +51,10 @@ def random_anime_quote():
     ul_tag = soup.find_all('ul')[3]
     quotes = []
     for tag in ul_tag.find_all('li'):
-        text = re.sub(r"eval\(ez_write_tag.*\)\);", " ", tag.text).replace(u'\xa0', u' ').strip()
-        if len(text) != 0:
+        text = tag.text.replace(u'\xa0', u' ').strip()
+        ind = text.find("if(typeof")
+        if ind > -1:
+            text = text[0: ind]
+        if len(text) > 0:
             quotes.append(text)
     return choice(quotes)

@@ -4,20 +4,16 @@ long_desc = """quoters
 ``A python library that gives you beautiful quotes.``
 
 # To install
-``
-pip install quoters
-``
+``pip install quoters``
 
 # Documentation
-``
-https://github.com/suman-kr/quoters
-``
+``https://github.com/suman-kr/quoters``
 """
 
 setup(
     name='quoters',
     packages=['quoters'],
-    version='0.19',
+    version='0.20',
     license='MIT',
     description='Pythonic random quote generator',
     long_description=long_desc,
@@ -39,8 +35,9 @@ setup(
         'Topic :: Software Development :: Build Tools',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
     ],
 )
