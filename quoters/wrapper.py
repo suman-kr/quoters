@@ -1,6 +1,8 @@
 import zlib
 import json
 from base64 import b64encode, b64decode
+import os
+
 
 class Wrapper:
     loaded_file = {}
@@ -9,7 +11,8 @@ class Wrapper:
         self.path = path
 
     def open_file(self):
-        with open(self.path) as fp:
+        abs_path = os.path.dirname(os.path.abspath(__file__))
+        with open(os.path.join(abs_path, "data", self.path), "r") as fp:
             self.loaded_file = json.loads(fp.read())
 
     def decode_file(self):
