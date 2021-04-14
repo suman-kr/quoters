@@ -32,11 +32,11 @@ def check_connection_and_generate_quote(_type: QuoteType, offline=False):
         else:
             if offline:
                 if _type == QuoteType.QUOTE:
-                    return Wrapper("quoters/data/quote.json").find_quote(str(randint(0, 96)))
+                    return Wrapper("quoters/quoters/data/quote.json").find_quote(str(randint(0, 96)))
                 if _type == QuoteType.SERIES_QUOTE:
-                    return Wrapper("quoters/data/series.json").find_quote(str(randint(0, 49)))
+                    return Wrapper("quoters/quoters/data/series.json").find_quote(str(randint(0, 49)))
                 if _type == QuoteType.ANIME_QUOTE:
-                    return Wrapper("quoters/data/anime.json").find_quote(str(randint(0, 103)))
+                    return Wrapper("quoters/quoters/data/anime.json").find_quote(str(randint(0, 103)))
             print("Site not reachable!\nPlease check your connection")
             return False
     except:
