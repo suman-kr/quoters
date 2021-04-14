@@ -2,12 +2,14 @@ from bs4 import BeautifulSoup as bs
 from urllib.request import Request, urlopen
 from bs4 import BeautifulSoup as bs
 from urllib.request import Request, urlopen
-from random import choice
+from random import choice, randint
 from quoters.check_connection import is_connected
 from quoters.constants import URL, SERIES_QUOTES_URL, ANIME_QUOTES_URL
 import sys
 import re
 from quoters.enum import QuoteType
+from quoters.wrapper import Wrapper
+
 
 def generate_random_quote():
     req = Request(URL, headers={'User-Agent': 'Mozilla/5.0'})
@@ -18,7 +20,7 @@ def generate_random_quote():
     return choice(quotes)
 
 
-def check_connection_and_generate_quote(_type: QuoteType):
+def check_connection_and_generate_quote(_type: QuoteType, offline=False):
     try:
         if is_connected():
             if _type == QuoteType.QUOTE:
@@ -28,6 +30,13 @@ def check_connection_and_generate_quote(_type: QuoteType):
             if _type == QuoteType.ANIME_QUOTE:
                 return random_anime_quote()
         else:
+            if offline:
+                if _type == QuoteType.QUOTE:
+                    return Wrapper("quoters/data/quote.json").find_quote(str(randint(0, 96)))
+                if _type == QuoteType.SERIES_QUOTE:
+                    return Wrapper("quoters/data/series.json").find_quote(str(randint(0, 49)))
+                if _type == QuoteType.ANIME_QUOTE:
+                    return Wrapper("quoters/data/anime.json").find_quote(str(randint(0, 103)))
             print("Site not reachable!\nPlease check your connection")
             return False
     except:
@@ -40,7 +49,7 @@ def random_series_quote():
     soup = bs(html, 'html.parser')
     paragraphs = soup.find_all('p')
     quotes = [re.sub(r"^\d{1,}\.", "", paragraphs[i].text)
-                        for i in range(5, len(paragraphs) - 1)]
+              for i in range(5, len(paragraphs) - 1)]
     return choice(quotes)
 
 
