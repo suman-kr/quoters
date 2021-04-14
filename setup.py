@@ -13,7 +13,7 @@ long_desc = """quoters
 setup(
     name='quoters',
     packages=['quoters'],
-    version='0.25',
+    version='0.28',
     license='MIT',
     description='Pythonic random quote generator',
     long_description=long_desc,
@@ -21,7 +21,7 @@ setup(
     author='Suman Kumar',
     author_email='skcool.123bgp@gmail.com',
     url='https://github.com/suman-kr/quoters',
-    download_url='https://github.com/suman-kr/quoters/archive/0.25.tar.gz',
+    download_url='https://github.com/suman-kr/quoters/archive/0.28.tar.gz',
     keywords=['RANDOM', 'QUOTES', 'SCRAPPER'],
     install_requires=[
         'requests',
@@ -40,4 +40,8 @@ setup(
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
     ],
+    include_package_data=True,
+    package_data={
+        '': ['data/*.json'],
+    },
 )

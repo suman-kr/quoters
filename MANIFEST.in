@@ -1,1 +1,1 @@
-recursive-include quoters *.json
+recursive-include quoters/data *
