@@ -18,6 +18,11 @@ print() # Returns random quotes
 print_series_quote() # Returns random TV shows quotes
 print_anime_quote() # Returns random Anime quotes
 ```
+> Offline usage example
+```py
+print(True)
+```
+`Note: Pass True as a parameter for fallback. It works for all the available functions.`
 
 ## Resources
 The data consumed are from the following sources:
