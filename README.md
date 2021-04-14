@@ -1,6 +1,5 @@
 # quoters
-A python web scrapper to generate random quote
-
+A pythonic random quote generator with multiple categoties.
 > Installation
 ```sh
 pip install quoters
