@@ -1,6 +1,5 @@
 # quoters
-A python web scrapper to generate random quote
-
+A pythonic random quote generator with multiple categoties.
 > Installation
 ```sh
 pip install quoters
@@ -18,6 +17,11 @@ print() # Returns random quotes
 print_series_quote() # Returns random TV shows quotes
 print_anime_quote() # Returns random Anime quotes
 ```
+> Offline usage example
+```py
+print(True)
+```
+`Note: Pass True as a parameter for fallback. It works for all the available functions.`
 
 ## Resources
 The data consumed are from the following sources:
