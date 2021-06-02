@@ -10,6 +10,16 @@ pip install quoters
 from quoters import Quote
 print(Quote.print())
 ```
+> Linux shell configuration (BASH)
+```sh
+git clone --branch master https://github.com/suman-kr/quoters.git && cd quoters
+chmod +x quoters_script.py
+ln -s <PATH_TO_GIT_REPO>/quoters_script.py /usr/local/bin/quoters
+
+### Add the below line to your .bashrc. 
+export PATH=$PATH:/usr/local/bin 
+```
+
 ## Contents
 > Available Functions
 ```py
