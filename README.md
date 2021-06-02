@@ -6,7 +6,7 @@ pip install quoters
 ```
 
 > Running and usage
-```sh
+```py
 from quoters import Quote
 print(Quote.print())
 ```
