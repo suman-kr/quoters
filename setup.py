@@ -1,4 +1,5 @@
 from distutils.core import setup
+from setuptools import setup, find_packages
 
 long_desc = """quoters
 ``A python library that gives you beautiful quotes.``
@@ -12,7 +13,7 @@ long_desc = """quoters
 
 setup(
     name='quoters',
-    packages=['quoters, __tests__'],
+    packages=find_packages(),
     version='0.28',
     license='MIT',
     description='Pythonic random quote generator',
