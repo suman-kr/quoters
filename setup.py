@@ -12,7 +12,7 @@ long_desc = """quoters
 
 setup(
     name='quoters',
-    packages=['quoters'],
+    packages=['quoters, __tests__'],
     version='0.28',
     license='MIT',
     description='Pythonic random quote generator',
