@@ -1,6 +1,5 @@
 import unittest
-from quoters import main as quoters
-from quoters import check_connection
+from quoters import Quote, check_connection
 
 
 class QuotersTest(unittest.TestCase):
@@ -9,21 +8,21 @@ class QuotersTest(unittest.TestCase):
         """
             Test random quote generation
         """
-        quote = quoters.Quote().print()
+        quote = Quote().print()
         self.assertTrue(type(quote) == str)
 
     def test_random_series_quote(self):
         """
             Test random series quote generation
         """
-        quote = quoters.Quote().print_series_quote()
+        quote = Quote().print_series_quote()
         self.assertTrue(type(quote) == str)
 
     def test_random_anime_quote(self):
         """
             Test random anime quote generation
         """
-        quote = quoters.Quote().print_anime_quote()
+        quote = Quote().print_anime_quote()
         self.assertTrue(type(quote) == str)
 
     def test_internet_connectivity(self):
