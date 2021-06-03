@@ -22,5 +22,5 @@ jobs:
           python setup.py install
       - name: Test with unittest
         run: |
-          cd quoters/__tests__
+          cd __tests__
           python -m unittest discover -v
