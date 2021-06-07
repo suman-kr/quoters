@@ -1,12 +1,13 @@
 #! /usr/bin/env python3
 
 import sys
-from quoters import main as quoters
+from quoters import extract_data
+from quoters.enum import QuoteType
 
 
 def main():
     try:
-        print(quoters.Quote().print(True))
+        print(extract_data._fetch_offline_quotes(QuoteType.QUOTE))
         return 0
     except:
         return 1

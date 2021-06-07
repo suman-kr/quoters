@@ -23,7 +23,7 @@ jobs:
           python setup.py install
       - name: Test with unittest and generate coverage
         run: |
-          coverage run --source quoters -m unittest discover -v
+          coverage run --source=quoters,api  -m unittest discover -v
           coverage report -m
           coverage xml
       - name: Upload coverage to Codecov

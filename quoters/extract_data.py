@@ -1,7 +1,5 @@
 from bs4 import BeautifulSoup as bs
 from urllib.request import Request, urlopen
-from bs4 import BeautifulSoup as bs
-from urllib.request import Request, urlopen
 from random import choice, randint
 from quoters.check_connection import is_connected
 from quoters.constants import URL, SERIES_QUOTES_URL, ANIME_QUOTES_URL
@@ -20,6 +18,15 @@ def generate_random_quote():
     return choice(quotes)
 
 
+def _fetch_offline_quotes(_type: QuoteType):
+    if _type == QuoteType.QUOTE:
+        return Wrapper("quote.json").find_quote(str(randint(0, 96)))
+    if _type == QuoteType.SERIES_QUOTE:
+        return Wrapper("series.json").find_quote(str(randint(0, 49)))
+    if _type == QuoteType.ANIME_QUOTE:
+        return Wrapper("anime.json").find_quote(str(randint(0, 103)))
+
+
 def check_connection_and_generate_quote(_type: QuoteType, offline=False):
     try:
         if is_connected():
@@ -31,12 +38,7 @@ def check_connection_and_generate_quote(_type: QuoteType, offline=False):
                 return random_anime_quote()
         else:
             if offline:
-                if _type == QuoteType.QUOTE:
-                    return Wrapper("quote.json").find_quote(str(randint(0, 96)))
-                if _type == QuoteType.SERIES_QUOTE:
-                    return Wrapper("series.json").find_quote(str(randint(0, 49)))
-                if _type == QuoteType.ANIME_QUOTE:
-                    return Wrapper("anime.json").find_quote(str(randint(0, 103)))
+                _fetch_offline_quotes(_type)
             print("Site not reachable!\nPlease check your connection")
             return False
     except:
