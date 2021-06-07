@@ -28,6 +28,7 @@ export PATH=$PATH:/usr/local/bin
 print() # Returns random quotes
 print_series_quote() # Returns random TV shows quotes
 print_anime_quote() # Returns random Anime quotes
+print_programming_quote() #Returns random Programming quotes
 ```
 > Offline usage example
 ```py
@@ -40,6 +41,7 @@ The data consumed are from the following sources:
 - https://www.yourselfquotes.com/thought-of-the-day/
 - https://www.tvtime.com/article/top-50-unforgettable-tv-quotes
 - https://bayart.org/anime-quotes/
+- https://betterprogramming.pub/101-funny-programmer-quotes-76c7f335b92d
 
 ## API
 The package can also be used from API. API is hosted on [Heroku](https://www.heroku.com/)
@@ -47,5 +49,6 @@ The package can also be used from API. API is hosted on [Heroku](https://www.her
 http://py-quoters.herokuapp.com/ [Random quote]
 http://py-quoters.herokuapp.com/?query=series [Random TV Shows quote]
 http://py-quoters.herokuapp.com/?query=anime [Random Anime characters quote]
+http://py-quoters.herokuapp.com/?query=programming [Random Programming quote]
 ```
 ### Thanks! :heart:
