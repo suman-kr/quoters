@@ -39,7 +39,7 @@ def check_connection_and_generate_quote(_type: QuoteType, offline=False):
                 return random_programming_quote()
         else:
             if offline:
-                _fetch_offline_quotes(_type)
+                return _fetch_offline_quotes(_type)
             print("Site not reachable!\nPlease check your connection")
             return False
     except:
