@@ -29,6 +29,13 @@ class QuotersTest(unittest.TestCase):
         quote = Quote().print_anime_quote()
         self.assertTrue(type(quote) == str)
 
+    def test_random_programming_quote(self):
+        """
+            Test random programming quote generation
+        """
+        quote = Quote().print_programming_quote()
+        self.assertTrue(type(quote) == str)
+
     def test_internet_connectivity(self):
         """
             Test internet connectivity
@@ -55,6 +62,13 @@ class QuotersTest(unittest.TestCase):
             Test api response for random series quotes
         """
         response = api_client.get("/?query=series")
+        self.assertEqual(response.status_code, 200)
+
+    def test_random_programming_quotes_api(self):
+        """
+            Test api response for random programming quotes
+        """
+        response = api_client.get("/?query=programming")
         self.assertEqual(response.status_code, 200)
 
 

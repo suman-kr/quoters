@@ -13,11 +13,13 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 @app.get("/")
 def quotes(query: Optional[str] = None):
     if query == "series":
         return {"quote": Quote.print_series_quote()}
     if query == "anime":
         return {"quote": Quote.print_anime_quote()}
+    if query == "programming":
+        return {"quote": Quote.print_programming_quote()}
     return {"quote": Quote.print()}
-
