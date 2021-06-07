@@ -4,6 +4,7 @@ class QuoteType(Enum):
     QUOTE = 'QUOTE'
     SERIES_QUOTE = 'SERIES_QUOTE'
     ANIME_QUOTE = 'ANIME_QUOTE'
+    PROGRAMMING_QUOTE = 'PROGRAMMING_QUOTE'
 
     def __str__(self):
         return self.value

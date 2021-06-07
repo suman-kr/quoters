@@ -48,3 +48,17 @@ class Quote:
             QuoteType.ANIME_QUOTE, offline)
         if result != False:
             return result
+
+    @staticmethod
+    def print_programming_quote(offline=False):
+        """
+            Function to return random programming quotes
+            Parameters
+            ----------
+            offline: Boolean, optional
+                To support offline usage (default is False)
+        """
+        result = check_connection_and_generate_quote(
+            QuoteType.PROGRAMMING_QUOTE, offline)
+        if result != False:
+            return result
