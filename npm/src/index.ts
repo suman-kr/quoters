@@ -6,7 +6,7 @@ import { QuoteCategory } from './typings';
  * @constructor
  * @param {QuoteCategory} category - Category of the quote: `QUOTE`, `ANIME`, `SERIES`, `PROGRAMMING`.
  */
-class Quote {
+export default class Quote {
   private category: QuoteCategory;
   constructor(category: QuoteCategory) {
     this.category = category;
@@ -19,5 +19,3 @@ class Quote {
     return decodeData(this.category);
   }
 }
-
-export default Quote;
