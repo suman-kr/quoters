@@ -1,6 +1,6 @@
 {
   "name": "quoters",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Random quotes generator",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -17,7 +17,10 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/suman-kr/quoters.git"
+  },
+  "bugs": {
+    "url": "https://github.com/suman-kr/quoters/issues"
   },
   "keywords": [
     "random",
@@ -25,7 +28,7 @@
   ],
   "author": "Suman Kumar",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/suman-kr/quoters",
   "devDependencies": {
     "@types/jest": "^22.2.3",
     "@types/node": "^15.12.5",

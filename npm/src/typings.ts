@@ -1,1 +1,1 @@
-export type QuoteCategory = "QUOTE" | "SERIES" | "ANIME" | "PROGRAMMING";
+export type QuoteCategory = 'QUOTE' | 'SERIES' | 'ANIME' | 'PROGRAMMING';
