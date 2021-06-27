@@ -1,0 +1,43 @@
+{
+  "name": "quoters",
+  "version": "1.0.2",
+  "description": "Random quotes generator",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "random",
+    "quotes"
+  ],
+  "author": "Suman Kumar",
+  "license": "MIT",
+  "homepage": "",
+  "devDependencies": {
+    "@types/jest": "^22.2.3",
+    "@types/node": "^15.12.5",
+    "codecov": "^3.1.0",
+    "jest": "^23.6.0",
+    "prettier": "^1.13.2",
+    "ts-jest": "^22.4.6",
+    "tslint": "^5.10.0",
+    "tslint-config-prettier": "^1.13.0",
+    "typescript": "^4.3.4"
+  },
+  "files": [
+    "dist/**/*"
+  ]
+}
