@@ -45,7 +45,7 @@ export const decodeData = (category: QuoteCategory): string => {
         return inflatedUncompressedData[random];
 
       default:
-        return "It's amusing how we get this wrong."
+        return "It's amusing how we get this wrong.";
     }
   };
 
