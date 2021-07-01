@@ -43,6 +43,9 @@ export const decodeData = (category: QuoteCategory): string => {
         );
         random = generateRandomNumber(0, 49);
         return inflatedUncompressedData[random];
+
+      default:
+        return "It's amusing how we get this wrong."
     }
   };
 
