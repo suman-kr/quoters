@@ -1,4 +1,4 @@
-import zlib from 'zlib';
+import zlib from 'browserify-zlib';
 
 // Local Imports
 import anime from './data/anime.json';
