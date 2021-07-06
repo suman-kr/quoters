@@ -1,7 +1,7 @@
 # quoters
 A pythonic random quote generator with multiple categoties.
 
-[![codecov.io](https://codecov.io/github/suman-kr/quoters/coverage.svg?branch=master)](https://codecov.io/github/suman-kr/quoters?branch=master)
+[![codecov.io](https://codecov.io/github/suman-kr/quoters/coverage.svg?branch=master)](https://codecov.io/github/suman-kr/quoters?branch=master) [![Pypi Downloads](https://pepy.tech/badge/quoters/month)](https://pepy.tech/project/quoters) [![npm version](https://badge.fury.io/js/quoters.svg)](https://badge.fury.io/js/quoters)
 > Installation
 ```sh
 pip install quoters
