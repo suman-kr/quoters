@@ -2,6 +2,9 @@
 A pythonic random quote generator with multiple categoties.
 
 [![codecov.io](https://codecov.io/github/suman-kr/quoters/coverage.svg?branch=master)](https://codecov.io/github/suman-kr/quoters?branch=master) [![Pypi Downloads](https://pepy.tech/badge/quoters/month)](https://pepy.tech/project/quoters) [![npm version](https://badge.fury.io/js/quoters.svg)](https://badge.fury.io/js/quoters)
+
+## PyPi
+
 > Installation
 ```sh
 pip install quoters
@@ -12,29 +15,66 @@ pip install quoters
 from quoters import Quote
 print(Quote.print())
 ```
-> Linux shell configuration (BASH)
-```sh
-git clone --branch master https://github.com/suman-kr/quoters.git && cd quoters
-chmod +x quoters_script.py
-ln -s <PATH_TO_GIT_REPO>/quoters_script.py /usr/local/bin/quoters
 
-### Add the below line to your .bashrc. 
-export PATH=$PATH:/usr/local/bin 
-```
-
-## Contents
 > Available Functions
 ```py
 print() # Returns random quotes
 print_series_quote() # Returns random TV shows quotes
 print_anime_quote() # Returns random Anime quotes
-print_programming_quote() #Returns random Programming quotes
+print_programming_quote() # Returns random Programming quotes
 ```
 > Offline usage example
 ```py
 print(True)
 ```
 `Note: Pass True as a parameter for fallback. It works for all the available functions.`
+
+## NPM
+
+
+> Installation
+
+```sh
+npm install quoters
+```
+
+> Running and usage
+
+```js
+// ES6 and Typescript
+import Quote from 'quoters';
+const randomQuote = new Quote('QUOTE').get()
+console.log(randomQuote);
+
+// ES5 and old JS
+var Quote = require('quoters').default;
+const randomQuote = new Quote('QUOTE').get()
+console.log(randomQuote);
+```
+
+> Categories
+```
+- QUOTE: Random quote
+- ANIME: Random anime quote
+- SERIES: Random famous TV series quote
+- PROGRAMMING: Random geeky quote xD
+```
+
+## CLI
+
+> BASH shell configuration (Linux and MacOS)
+```sh
+git clone --branch master https://github.com/suman-kr/quoters.git && cd quoters
+chmod +x quoters_script.py
+ln -s <ABSOLUTE_PATH_TO_CLONED_REPO>/quoters_script.py /usr/local/bin/quoters
+
+### Add the below line to your .bashrc. 
+export PATH=$PATH:/usr/local/bin 
+```
+> Running and usage
+```sh
+quoters help # List down all the available categories
+```
 
 ## Resources
 The data consumed are from the following sources:
