@@ -18,16 +18,33 @@
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,400&display=swap");
       body {
-        background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(142, 158, 171), rgb(238, 242, 243)) repeat scroll 0% 0%
+        background: #f8f8fb
       }
       * {
         font-family: "Poppins", sans-serif;
+      }
+      .container {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+      #quote{
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        border-bottom-width: 5px !important;
       }
     </style>
   </head>
   <body>
     <div class="row py-5 m-0">
-      <div class="col-lg-6 col-md-8 mx-auto border rounded p-4 border-dark">
+      <div
+        class="
+          col-lg-6 col-md-8
+          mx-auto
+          border
+          rounded
+          p-4
+          border-dark
+          container
+        "
+      >
         <h1 class="display-4 fw-bold">
           <u> <span class="display-2 fw-bold">q</span><span>uoters</span></u>
         </h1>
@@ -52,7 +69,16 @@
     </div>
     <div class="row py-3 m-0">
       <div
-        class="col-lg-8 col-md-8 mx-auto border rounded p-4 fst-italic fs-4 border-dark"
+        class="
+          col-lg-8 col-md-8
+          mx-auto
+          border
+          rounded
+          p-4
+          fst-italic
+          fs-4
+          border-dark
+        "
         id="quote"
       ></div>
     </div>
