@@ -1,0 +1,20 @@
+{
+  "code": {
+    "quote": {
+      "1": "from quoters import Quote",
+      "2": "print(Quote.print())"
+    },
+    "anime": {
+      "1": "from quoters import Quote",
+      "2": "print(Quote.print_anime_quote())"
+    },
+    "programming": {
+      "1": "from quoters import Quote",
+      "2": "print(Quote.print_programming_quote())"
+    },
+    "series": {
+      "1": "from quoters import Quote",
+      "2": "print(Quote.print_series_quote())"
+    }
+  }
+}

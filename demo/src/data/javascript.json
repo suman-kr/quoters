@@ -1,0 +1,24 @@
+{
+  "code": {
+    "quote": {
+      "1": "import Quote from 'quoters'",
+      "2": "const randomQuote = new Quote('QUOTE').get()",
+      "3": "console.log(randomQuote);"
+    },
+    "anime": {
+      "1": "import Quote from 'quoters'",
+      "2": "const randomQuote = new Quote('ANIME').get()",
+      "3": "console.log(randomQuote);"
+    },
+    "programming": {
+      "1": "import Quote from 'quoters'",
+      "2": "const randomQuote = new Quote('PROGRAMMING').get()",
+      "3": "console.log(randomQuote);"
+    },
+    "series": {
+      "1": "import Quote from 'quoters'",
+      "2": "const randomQuote = new Quote('SERIES').get()",
+      "3": "console.log(randomQuote);"
+    }
+  }
+}
