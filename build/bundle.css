@@ -17,3 +17,84 @@ body {
   border-bottom-width: 5px !important;
 }
 
+.editor {
+  background: #f5f9fc;
+  flex-basis: 50%;
+}
+code {
+  font-size: 1em;
+}
+
+.editor-bar {
+  background: #eff3f8;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.editor-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 576px) {
+  .editor-container {
+    display: block;
+  }
+}
+
+.language-toolbar {
+  display: flex;
+}
+
+.first-lang-option {
+  flex-basis: 20%;
+}
+
+.second-lang-option {
+  flex-grow: 1;
+}
+
+pre {
+  margin: 0 !important;
+}
+
+.icon {
+  height: 2.5em;
+  width: 2.5em !important;
+}
+
+.icon-sm {
+  height: 1.5em;
+  width: 1.5em !important;
+}
+
+.npm {
+  color: red;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.link-container {
+  display: flex;
+}
+
+@media only screen and (max-width: 256px) {
+  .link-container {
+    flex-direction: column;
+  }
+}
+
+.category {
+}
+
+.category:hover{
+  background-color: #8A8FF0;
+}
