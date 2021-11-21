@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,400&display=swap");
 body {
   margin: 0;
+  height: 100%;
 }
 * {
   font-family: "Poppins", sans-serif;
@@ -15,4 +16,90 @@ body {
 #quote {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-bottom-width: 5px !important;
+}
+
+.editor {
+  background: #f5f9fc;
+  flex-basis: 50%;
+}
+code {
+  font-size: 1em;
+}
+
+.editor-bar {
+  background: #eff3f8;
+  padding: 8px;
+  font-weight: bold;
+}
+
+.editor-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 576px) {
+  .editor-container {
+    display: block;
+  }
+}
+
+.language-toolbar {
+  display: flex;
+}
+
+.first-lang-option {
+  flex-basis: 20%;
+}
+
+.second-lang-option {
+  flex-grow: 1;
+}
+
+pre {
+  margin: 0 !important;
+}
+
+.icon {
+  height: 2.5em;
+  width: 2.5em !important;
+}
+
+.icon-sm {
+  height: 1.5em;
+  width: 1.5em !important;
+}
+
+.npm {
+  color: red;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.link-container {
+  display: flex;
+}
+
+@media only screen and (max-width: 256px) {
+  .link-container {
+    flex-direction: column;
+  }
+}
+
+.category {
+}
+
+.category:hover {
+  background-color: #8a8ff0;
+}
+
+.selected-option {
+  border-bottom: 2px solid black;
 }
