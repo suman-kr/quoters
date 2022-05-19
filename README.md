@@ -62,14 +62,14 @@ console.log(randomQuote);
 
 ## CLI
 
-> BASH shell configuration (Linux and MacOS)
+> BASH / ZSH shell configuration (Linux and MacOS)
 ```sh
 git clone --branch master https://github.com/suman-kr/quoters.git && cd quoters
 chmod +x quoters_script.py
 pip install -r requirements.txt
 ln -s <ABSOLUTE_PATH_TO_CLONED_REPO>/quoters_script.py /usr/local/bin/quoters
 
-### Add the below line to your .bashrc. 
+### Add the below line to your .bashrc / .zshrc  
 export PATH=$PATH:/usr/local/bin 
 ```
 > Running and usage
