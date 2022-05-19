@@ -1,5 +1,5 @@
 # quoters
-A pythonic random quote generator with multiple categoties.
+A pythonic random quote generator with multiple categoties. (Python 3)
 
 [![codecov.io](https://codecov.io/github/suman-kr/quoters/coverage.svg?branch=master)](https://codecov.io/github/suman-kr/quoters?branch=master) [![Pypi Downloads](https://pepy.tech/badge/quoters/month)](https://pepy.tech/project/quoters) [![npm version](https://badge.fury.io/js/quoters.svg)](https://badge.fury.io/js/quoters)
 
@@ -66,6 +66,7 @@ console.log(randomQuote);
 ```sh
 git clone --branch master https://github.com/suman-kr/quoters.git && cd quoters
 chmod +x quoters_script.py
+pip install -r requirements.txt
 ln -s <ABSOLUTE_PATH_TO_CLONED_REPO>/quoters_script.py /usr/local/bin/quoters
 
 ### Add the below line to your .bashrc. 
