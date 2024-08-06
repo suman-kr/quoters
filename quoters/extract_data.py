@@ -40,7 +40,7 @@ def check_connection_and_generate_quote(_type: QuoteType, offline=False):
         else:
             if offline:
                 return _fetch_offline_quotes(_type)
-            print("Site not reachable!\nPlease check your connection")
+            print("Not connected to internet!\nPlease check your connection")
             return False
     except:
         raise OSError
